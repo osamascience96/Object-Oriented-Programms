@@ -1,0 +1,108 @@
+'Class Example in Visual Basic
+Module Module1
+
+    'init the car variable of Car type (NEW(init the constructor) instance of the Car)
+    Dim car As New Car()
+
+    Sub Main()
+        car.SetVechileId("ABC123")
+        Console.WriteLine(car.GetVechildId())
+
+        car.SetRegistrationNumber("LEX-9465")
+        Console.WriteLine(car.GetRegistrationNumber())
+
+        car.SetRegistrationDate(#4/25/2019#)
+        Console.WriteLine(car.GetRegistrationDate())
+
+        car.SetCarType("Sports")
+        Console.WriteLine(car.GetCarType())
+
+        car.SetCompany("Tesla")
+        Console.WriteLine(car.GetCompany())
+
+        car.SetModelYear(2018)
+        Console.WriteLine(car.GetModelYear())
+
+        Console.ReadLine()
+    End Sub
+
+End Module
+
+
+
+'Car Class'
+Public Class Car
+    ' Attributes
+    Private VechileId As String
+    Private RegistrationNumber As String
+    Private RegistrationDate As Date
+    Private CarType As String
+    Private Company As String
+    Private ModelYear As Integer
+
+    'constructor
+    Public Sub New()
+        ' init all the variables(attributes)
+        VechileId = ""
+        RegistrationNumber = ""
+        RegistrationDate = #1/1/2001#
+        CarType = ""
+        Company = ""
+        ModelYear = 0
+    End Sub
+
+    'Set VechileId
+    Public Sub SetVechileId(ByVal VechileId As String)
+        Me.VechileId = VechileId
+    End Sub
+    'Get VechileID
+    Public Function GetVechildId() As String
+        Return VechileId
+    End Function
+
+    'Set RegistrationNumber
+    Public Sub SetRegistrationNumber(ByVal RegistrationNumber As String)
+        Me.RegistrationNumber = RegistrationNumber
+    End Sub
+    'Get RegistrationNumber
+    Public Function GetRegistrationNumber() As String
+        Return RegistrationNumber
+    End Function
+
+    'Set RegistrationDate
+    Public Sub SetRegistrationDate(ByVal RegistrationDate As Date)
+        Me.RegistrationDate = RegistrationDate
+    End Sub
+    'Get RegistrationDate
+    Public Function GetRegistrationDate() As Date
+        Return RegistrationDate
+    End Function
+
+    'Set CarType
+    Public Sub SetCarType(ByVal CarType As String)
+        Me.CarType = CarType
+    End Sub
+    'Get CarType
+    Public Function GetCarType() As String
+        Return CarType
+    End Function
+
+    'Set Company
+    Public Sub SetCompany(ByVal Company As String)
+        Me.Company = Company
+    End Sub
+    'Get Company
+    Public Function GetCompany() As String
+        Return Company
+    End Function
+
+    'Set ModelYear
+    Public Sub SetModelYear(ByVal ModelYear As Integer)
+        Me.ModelYear = ModelYear
+    End Sub
+    'Get ModelYear
+    Public Function GetModelYear() As Integer
+        Return ModelYear
+    End Function
+
+End Class
