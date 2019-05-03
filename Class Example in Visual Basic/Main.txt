@@ -1,0 +1,29 @@
+'Class Example in Visual Basic
+Module Module1
+
+    'init the car variable of Car type (NEW(init the constructor) instance of the Car)
+    Dim car As New Car()
+
+    Sub Main()
+        car.SetVechileId("ABC123")
+        Console.WriteLine(car.GetVechildId())
+
+        car.SetRegistrationNumber("LEX-9465")
+        Console.WriteLine(car.GetRegistrationNumber())
+
+        car.SetRegistrationDate(#4/25/2019#)
+        Console.WriteLine(car.GetRegistrationDate())
+
+        car.SetCarType("Sports")
+        Console.WriteLine(car.GetCarType())
+
+        car.SetCompany("Tesla")
+        Console.WriteLine(car.GetCompany())
+
+        car.SetModelYear(2018)
+        Console.WriteLine(car.GetModelYear())
+
+        Console.ReadLine()
+    End Sub
+
+End Module
